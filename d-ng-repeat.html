@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<body>
+
+		<div ng-app="" >
+			<div ng-init="name=['Jani', 'Hege', 'Kai']">
+				<ul>
+				    <li ng-repeat="x in name">
+				    	{{x}}
+				    </li>
+				</ul>
+			</div>
+
+			<div ng-init="short=[{name: 'a1', color: 'green'}, {name: 'a2', color: 'yellow'}, {name: 'a3', color: 'red'}]">
+				<ul>
+				    <li ng-repeat="y in short">
+				    	{{y.name + " " +y.color}}
+				    </li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
